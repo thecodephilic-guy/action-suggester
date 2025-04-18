@@ -110,7 +110,7 @@ SECRET_KEY='<your-django-secret-key-from-action-suggester/settings.py>' # Found 
 ```
 🔐 Do NOT commit your .env file to GitHub. It contains sensitive credentials.
 
-### Configure Django Settings for Neon
+### Configure Django Settings for Neon (Optional if you are using another DB)
 In your action_suggester/settings.py, update the database settings:
 ```python
 # Add these at the top
