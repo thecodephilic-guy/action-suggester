@@ -160,3 +160,7 @@ Request Body:
   "query": "I want to order pizza"
 }
 ```
+
+## Conclusion
+
+This project demonstrates how AI can be seamlessly integrated into modern web applications to derive insights from natural language and provide intelligent, actionable suggestions — all within a clean, scalable, and production-ready Django framework.
