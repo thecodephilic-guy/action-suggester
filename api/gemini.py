@@ -34,7 +34,7 @@ def get_tone_and_intent(text):
         response = client.models.generate_content(
             model="gemini-2.0-flash", contents=[prompt]
         )
-        cleaned = response.text.strip().removeprefix("```json").removesuffix("```").strip()
+        cleaned = response.text.strip().removeprefix("```json").removesuffix("```").strip() #the response.text is a string that looks like this: ```json {{"tone": "...", "intent": "..."}}``` which can not be parsed by json.loads so refractoring it in a valid format.
         return json.loads(cleaned)  # Safely parse JSON response
     except Exception as e:
         print(f"Gemini API Error: {e}")
